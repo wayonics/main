@@ -1,0 +1,208 @@
+<html>
+
+<head>
+
+<title>RAW MATERIAL ISSUE</title>
+<style>
+.space
+{
+
+	width:500px;
+
+}
+.font
+{
+	font-size:12px;
+	font-family:verdana;
+	width:10px;
+	
+}
+td,tr{
+
+margin:15px;
+padding:2px;
+}
+.normal
+{
+width:100px;
+}
+
+.text1
+{
+width:80px;
+}
+.table
+{
+	border: 1px solid black;
+    border-collapse: collapse;
+	height:30px;
+
+
+}
+</style>
+<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+
+<script>   
+    $(function() {
+         $( "#calendar" ).datepicker();   
+    }); 
+</script>
+
+<meta charset="UTF-8">
+</head>
+<body>
+
+<table width="900" cellspacing="0" cellpadding="0"  align="center">
+
+
+<tr>
+	<table width="900" cellspacing="0" cellpadding="0"  align="center" style="margin-top:10px;">
+	<tr>
+	<td class="font"  cellspacing="0" cellpadding="0">IssueDate</td>
+	<td class="font"  cellspacing="0" cellpadding="0">ItemName</td>
+	<td class="font"  cellspacing="0" cellpadding="0" align="left">MillLot <br>NO</td>
+	<td class="font"  cellspacing="0" cellpadding="0">    Cotton<br>Variety</td>
+	<td class="font"  cellspacing="0" cellpadding="0">Supplier</td>
+	<td class="font"  cellspacing="0" cellpadding="0"align="right">Bales</td>
+	<td class="font"  cellspacing="0" cellpadding="0"align="right">Boras</td>
+	<td class="font"  cellspacing="0" cellpadding="0" align="center">ConvBales</td>
+	</tr>
+	</table>
+</tr>
+<tr><td>
+	<table width="900" cellspacing="0" cellpadding="0"  align="center" style="margin-top:10px;">
+	<tr>
+	<td   cellspacing="0" cellpadding="0">
+	<input type="calendar" class="normal" name="f1">
+	</td>
+	<td   cellspacing="0" cellpadding="0">
+	<select class="normal"name="f1"><option value="text">Cootonlint</option></select>
+	
+	</td>
+	<td cellspacing="0" cellpadding="0"><select class="normal"><option>Cootonlint</option></select></td>
+	<td cellspacing="0" cellpadding="0"><select class="normal"  ><option>Cootonlint</option></select></td>
+	<td cellspacing="0" cellpadding="0"><input type="text"class="normal"  name="f1"></td>
+	<td cellspacing="0" cellpadding="0"><input type="text" class="text1" name="f1"></td>
+	<td cellspacing="0" cellpadding="0"><input type="text" class="text1"name="f1"></td>
+	<td cellspacing="0" cellpadding="0"><input type="text" class="text1"name="f1"></td>
+	</tr>
+	</table></td>
+	
+</tr>
+<tr>
+	<td cellspacing="0" cellpadding="0">
+	<table width="900" cellspacing="0" cellpadding="0"  align="center" style="margin-top:10px;">
+	<td cellspacing="0" cellpadding="0">Processlot No</td>
+	<td cellspacing="0" cellpadding="0"><input type="text"class="normal"  name="f1"></td>
+	<td cellspacing="0" cellpadding="0">Count</td>
+	<td   cellspacing="0" cellpadding="0">
+	<select class="normal"name="f1"><option>10</option></select>
+	</td>
+	<td   cellspacing="0" cellpadding="0">
+	<select class="normal"name="f1"><option>CH</option></select>
+	</td>
+	<td cellspacing="0" cellpadding="0"><input type="text"class="text1"  name="f1"></td>
+	<td cellspacing="0" cellpadding="0"><input type="text"class="text1"  name="f1"></td>
+	<td cellspacing="0" cellpadding="0">Unit</td>
+	<td   cellspacing="0" cellpadding="0">
+	<select class="normal"name="f1"><option>Unit-I</option></select></td>
+	<td cellspacing="0" cellpadding="0">NO.of Bales Issues</td>
+	<td cellspacing="0" cellpadding="0"><input type="text"class="text1"  name="f1"></td>
+	</table>
+	</td>
+	
+</tr>
+<tr>
+<td cellspacing="0" cellpadding="0">
+	<table width="900" cellspacing="0" cellpadding="0"  align="center">
+	   <tr>
+		<td width="850"cellspacing="0" cellpadding="0"> 
+		<table width="850" cellspacing="0" cellpadding="0"  align="center" class="table">
+  		<tr>
+    		<th class="table" >BaleNO</th>
+    		<th  class="table">2.5%sl</th>
+   			<th  class="table">50%Sl</th>
+			<th  class="table">UR%</th>
+			<th  class="table">Micro<br>niare</th>
+			<th  class="table">Strength</th>
+			<th  class="table">MR%</th>
+			<th  class="table">RD</th>
+			<th  class="table">+B</th>
+			<th  class="table">Trash%</th>
+			<th  class="table">Moist%</th>
+			<th  class="table">FQL</th>
+			<th  class="table">BaleWt</th>
+			<th  class="table">PhyWt</th>
+			<th  class="table">BaleWt<br>(avg)</th>
+			<th  class="table">Elong</th>
+			<th  class="table">S</th>
+			
+  		</tr>
+		<tr>
+			<td class="table">g</td>
+			 <td class="table">g</td>
+			 <td class="table">g</td>
+			 <td class="table">g</td>
+			 <td class="table">g</td>
+			 <td class="table">g</td>
+			 <td class="table">g</td>
+			 <td class="table">g</td>
+			 <td class="table">g</td>
+			 <td class="table">g</td>
+			 <td class="table">g</td>
+			 <td class="table">g</td>
+			 <td class="table">g</td>
+			  <td class="table">g</td>
+			  <td class="table">g</td>
+			  <td class="table">g</td>
+			  <td class="table">g</td>
+			 
+		</tr>
+		<tr>
+			<td class="table"></td>
+			<td class="table"></td>
+			<td class="table"></td>
+			<td class="table"></td>
+			<td class="table"></td>
+			<td class="table"></td>
+			<td class="table"></td>
+			<td class="table"></td>
+			<td class="table"></td>
+			<td class="table"></td>
+			<td class="table"></td>
+			<td class="table"></td>
+			<td class="table"></td>
+			<td class="table"></td>
+			<td class="table"></td>
+			<td class="table"></td>
+			<td class="table"></td>
+		</tr>
+		
+		
+	</table>
+		
+		
+		</td>
+		<td width="30"cellspacing="0" cellpadding="0">
+			<table width="30" cellspacing="0" cellpadding="0"  align="center">
+				
+				
+				<tr>
+					<td width="30"cellspacing="0" cellpadding="0"><input type="button" value="CLEAR"></td>
+				</tr>
+				<tr>
+					<td width="30"cellspacing="0" cellpadding="0"><input type="button" value="SAVE"></td>
+				</tr>
+				<tr>
+					<td width="30"cellspacing="0" cellpadding="0"><input type="button" value="ADD"></td>
+				</tr>
+			</table>	
+		</td>
+		
+		</tr>
+	</table>
+</td>
+</tr>
+</table>
+
+</body>

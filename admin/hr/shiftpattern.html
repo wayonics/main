@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title></title>
+         <meta charset="UTF-8"> 
+    </head>
+    <body>
+        <form action="">
+            <table>
+                <tr>
+                    <td>
+                        <label for="shift_code">Select</label>
+                    </td>
+                    <td>
+                        <select name="shift_code" id="shift_code">
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                    </td>
+                </tr>
+                <tr id="shift_code">
+                    <td><label for="shift_code">Shift</label></td>
+                </tr>
+                <tr>
+                    <?php
+                    for($i = ; $i<=15; $i++)
+                    {
+                        echo "<td><input type="text" name='shift_code_{$i}' > <td>";
+                    }
+                    ?>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

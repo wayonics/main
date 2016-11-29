@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title></title>
+         <meta charset="UTF-8"> 
+    </head>
+    <body>
+        <form action="">
+            <table>
+                <tr>
+                    <td>Select month:</td>
+                    <td>
+                        <select name="month" id="month">
+                            <option value="0">Choose month</option>
+                            <option value=""></option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="employee">Employee</label></td>
+                    <td><input type="text" id="employee" name="employee"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="year">Year</label>
+                    </td>
+                    <td>
+                       <select name="year" id="year">
+                           <?
+                           for($y = 2016; $y<=2030; $y++){
+                            echo "<option value='$y'> $y </option>";
+                           }
+                           ?>
+                       </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="approved">Approved</label></td>
+                    <td><input type="checkbox" name="approved" id="approved"></td>
+                    
+                </tr>
+                <tr>
+                    <td><label for="not_approved">Not approved</label></td>
+                    <td><input type="checkbox" name="not_approved" id="not_approved"></td>
+                </tr>
+                <tr>
+                    <td><label for="all">All</label></td>
+                    <td><input type="checkbox" name="all" id="all"></td>
+                </tr>
+                <tr>
+                    <td><label for="date">Date</label></td>
+                    <td><input type="date" name="date" id="date"></td>
+                </tr>
+                <tr>
+                    <td><button>Approve all</button></td>
+                    <td><button>Disapprove all</button></td>
+                </tr>
+            </table>
+        </form>
+        
+        <table>
+            <tr>
+                <td>
+                    <h4>Sl.no:</h4>
+                </td>
+                
+                <td>
+                    <h4>Code:</h4>
+                </td>
+                
+                <td>
+                    <h4>Shift:</h4>
+                </td>
+                
+                <td>
+                    <h4>In:</h4>
+                </td>
+                
+                <td>
+                    <h4>Out:</h4>
+                </td>
+                
+                <td>
+                    <h4>Total hours:</h4>
+                </td>
+                
+                <td>
+                    <h4>OT Hours:</h4>
+                </td>
+                
+                <td>
+                    <h4>Status:</h4>
+                </td>
+                
+                <td>
+                    <h4>Approved:</h4>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,80 @@
+ 
+
+ 
+/* Content Area
+--------------------------------------------------------------------------------------------------------------- */
+.container{padding:20px 10px;}
+
+.container h1, .container h2, .container h3, .container h4, .container h5, .container h6, .container .heading{padding-bottom:8px; border-bottom:1px solid;}
+
+/* Content */
+.container #content{}
+ 
+ 
+/* Sidebar */
+.container .sidebar{}
+
+.sidebar .sdb_holder{margin-bottom:50px;}
+.sidebar .sdb_holder:last-child{margin-bottom:0;}
+  
+ 
+/* Navigation
+--------------------------------------------------------------------------------------------------------------- */
+nav ul, nav ol{margin:0; padding:0; list-style:none; }
+
+#mainav .drop::after, #mainav li li .drop::after, #breadcrumb li a::after, .sidebar nav a::after{position:absolute; font-family:"FontAwesome"; font-size:10px; line-height:10px; }
+
+/* Top Navigation */
+#mainav{text-align:center; text-transform:uppercase;}
+#mainav ul{}
+#mainav ul ul{z-index:9999; position:absolute; width:160px;}
+#mainav ul ul ul{left:160px; top:0;}
+#mainav li{display:inline-block; position:relative; margin:0 30px 0 0; padding:0;}
+#mainav li:last-child{margin-right:0;}
+#mainav li li{width:100%; margin:0; text-align:left; text-transform:none;}
+#mainav li a{display:block; padding:0;}
+#mainav li li a{border:solid; border-width:0 0 1px 0;}
+#mainav li li:last-child a{border-bottom:none;}
+#mainav .drop{padding-left:15px;}
+#mainav li li a, #mainav li li .drop{display:block; margin:0; padding:10px 15px;}
+#mainav .drop::after, #mainav li li .drop::after{content:"\f0d7";}
+#mainav .drop::after{top:5px; left:5px;}
+#mainav li li .drop::after{top:15px; left:5px;}
+#mainav ul ul{display:none;}
+#mainav ul li:hover > ul{display:block;}
+
+#mainav form{display:none; margin:0; padding:0;}
+#mainav form select, #mainav form select option{display:block; cursor:pointer; outline:none;}
+#mainav form select{width:100%; padding:5px; border:1px solid;}
+#mainav form select option{margin:5px; padding:0; border:none;}
+  
+
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------ */
+
+
+/* Colours
+--------------------------------------------------------------------------------------------------------------- */
+body{color:#F9F9F9; background-color:#FFFFFF;}
+
+a{color:#55ABDA;}
+
+hr, .borderedbox{border-color:#D7D7D7;}
+
+label span{color:#FF0000; background-color:inherit;}
+
+.rounded {color:inherit; background-color:#F9F9F9; }
+
+
+/* Rows */
+.row0, .row0 a{color:#F9F9F9; background-color:#06213F;}
+.row1{color:#979797;  ;}
+.row1 a{color:#F9F9F9; }
+.row2, .row2 a{color:#06213F; background-color:inherit;}
+.row3{color:#979797; background-color:inherit;}
+.row4{color:#979797; background-color:inherit;}
+.row5, .row5 a{color:#55ABDA; background-color:#06213F;}
+  

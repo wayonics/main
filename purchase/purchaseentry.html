@@ -1,0 +1,1277 @@
+
+<?php
+session_start();
+if($_SESSION['user'])
+{
+?><!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Jyotirmaye Textiles</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+     
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css1/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     
+
+</head>
+
+<body>
+  
+   <?php include "menu.php"; ?>
+      </nav>
+    </header>
+
+<html>
+
+<head>
+
+<title>Masters Transaction Report</title>
+
+</head>
+
+
+<style>
+
+select{
+width:120px;}
+.text{
+width:70px;
+}
+.text1
+{
+width:59px;
+}
+.text2
+{
+width:50px;
+}
+.text3
+{
+width:35px;
+}
+.text4{
+width:20px;
+}
+.width
+{
+	width:90px;
+}
+.normal
+{
+width:120px;
+}
+.normal1
+{
+	width:100px;
+}
+td,tr{
+
+margin:15px;
+padding:2px;
+}
+
+</style>
+<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+
+<script>   
+    $(function() {
+         $( "#calendar" ).datepicker();   
+    }); 
+</script>
+
+<body>
+
+	<table width="500" cellspacing="0" cellpadding="0"  align="center">
+	<!--<tr>
+		<td width="500" height="150"><img src="newimg.jpg"></td>
+	</tr>-->
+	<tr>
+	<td><p style="font-size:20px;margin-top:0px;margin-bottom:30px">Masters Transaction Report</p></td>
+	</tr>
+	<tr>
+			<td width="500">
+			<table width"500" cellspacing="0" cellpadding="0" style="border:1px solid black;">
+				<tr>
+					<td width="50" >
+						<table width="50" cellspacing="0" cellpadding="0">
+						<tr style="height:20px">
+							<td width="20" height="30" cellspacing="0" cellpadding="0" style="font-size:11px ">PURCHASEORDER&nbsp;&nbsp;&nbsp;</td>
+							<td width="20" height="30" cellspacing="0" cellpadding="0" style=" "><input type="text" class="normal"></td>
+						</tr>
+						</table>
+						
+					</td>
+					<td style="width:4px;border:none;"></td>
+					<td width="40">
+						<table width="40" cellspacing="0" cellpadding="0">
+						<tr  style="height:20px">
+						<td width="20"  cellspacing="0" cellpadding="0" style="font-size:11px ">FINAL/PROVISIONAL</td>
+						<td width="20"  cellspacing="0" cellpadding="0" style=" ">
+							<select>        
+							<option value="volvo">Final</option>
+							<option value="saab">Final</option>
+							<option value="mercedes">Final</option>
+							<option value="audi">Final</option>
+							</select>
+         				</td>
+						</tr>
+						
+						
+						</table>
+						
+					</td>
+					<td style="width:4px;border:none;"></td>
+					<td width="40"   >
+						<table width="40" cellspacing="0" cellpadding="0">
+						<tr style="height:20px">
+						<td width="20" cellspacing="0" cellpadding="0" style="font-size:11px ">DESPATCHED FROM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+						<td width="20" cellspacing="0" cellpadding="0" style=" "><input type="text" class="normal"></td>
+						
+						</tr>
+						
+						</table>
+						
+					</td>
+					<td style="width:4px;border:none;"></td>
+					<td width="40" >
+						<table width="40" cellspacing="0" cellpadding="0" >
+						<tr style="height:20px">
+						<td width="20" cellspacing="0" cellpadding="0" style=" font-size:11px">AMCNO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="text" class="text1"></td>
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="text" class="text1"></td>
+						</tr>
+						
+						</table>
+						
+					</td>
+					
+				</tr>
+				<tr>
+					<td width="50" >
+						<table width="50" cellspacing="0" cellpadding="0">
+						<tr style="height:20px">
+							<td width="20" height="30" cellspacing="0" cellpadding="0" style="font-size:11px ">TRANSACTIONTYPE</td>
+							<td width="20" height="30" cellspacing="" cellpadding="0" style=" ">
+							<select>        
+							<option value="volvo">Purchase</option>
+							<option value="saab">Purchase</option>
+							<option value="mercedes">Purchase</option>
+							<option value="audi">Purchase</option>
+							</select>
+							
+							</td>
+						</tr>
+						</table>
+						
+					</td>
+					<td style="width:4px;border:none;"></td>
+					<td width="40">
+						<table width="40" cellspacing="0" cellpadding="0">
+						<tr  style="height:20px">
+						<td width="20"  cellspacing="0" cellpadding="0" style="font-size:11PX">SUPPLIER BILLNO/BILLDATE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td  cellspacing="0" cellpadding="0" style="font-size:11PX"><input type="text" class="text1"></td>
+						<td cellspacing="0" cellpadding="0" style=" "><input type="date" id= "calendar" class="text1"></td>
+
+         				
+						</tr>
+						
+						
+						</table>
+						
+					</td>
+					<td style="width:4px;border:none;"></td>
+					<td width="40"   >
+						<table width="40" cellspacing="0" cellpadding="0">
+						<tr style="height:20px">
+						<td width="20" cellspacing="0" cellpadding="0" style="font-size:11px ">PORTOFLOADING DISCHARGE&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td  cellspacing="0" cellpadding="0" style=" "><input type="text" class="text1"></td>
+						<td  cellspacing="0" cellpadding="0" style=" "><input type="text" class="text1"></td>
+						
+						</tr>
+						
+						</table>
+						
+					</td>
+					<td style="width:4px;border:none;"></td>
+					<td width="20" >
+						<table width="40" cellspacing="0" cellpadding="0" >
+						<tr style="height:20px">
+						<td  width="20" cellspacing="0" cellpadding="0" style=" font-size:11px;width:10px">AMPLACE&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td width="20" cellspacing="0" cellpadding="0" style=""><input type="text" class="normal"></td>
+						
+						</tr>
+						
+						</table>
+						
+					</td>
+					
+				</tr>
+				<tr>
+					<td width="50" >
+						<table width="50" cellspacing="0" cellpadding="0">
+						<tr style="height:20px">
+							<td width="20" height="30" cellspacing="0" cellpadding="0" style="font-size:11px ">INWARDNO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+							<td  height="0" cellspacing="0" cellpadding="0" style="align:center "><input type="text" class="text3"></td>
+							<td  height="0" cellspacing="0" cellpadding="0" style=" "><input type="text" class="text3"></td>
+							<td  height="0" cellspacing="0" cellpadding="0" style=" "><input type="text" class="text3"></td>
+						</tr>
+						</table>
+						
+					</td>
+					<td style="width:4px;border:none;"></td>
+					<td width="40">
+						<table width="40" cellspacing="0" cellpadding="0">
+						<tr  style="height:20px">
+						<td width="20"  cellspacing="0" cellpadding="0" style="font-size:11px ">SUPPLIERNAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td width="20"  cellspacing="0" cellpadding="0" style=" ">
+							<select>        
+							<option value="volvo">Final</option>
+							<option value="saab">Final</option>
+							<option value="mercedes">Final</option>
+							<option value="audi">Final</option>
+							</select>
+         				</td>
+						</tr>
+						
+						
+						</table>
+						
+					</td>
+					<td style="width:4px;border:none;"></td>
+					<td width="40"   >
+						<table width="40" cellspacing="0" cellpadding="0">
+						<tr style="height:20px">
+						<td width="20" cellspacing="0" cellpadding="0" style="font-size:11px ">FINAL DESTINATION&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td width="20" cellspacing="0" cellpadding="0" style=" "><input type="text" class="normal"></td>
+						
+						</tr>
+						
+						</table>
+						
+					</td>
+					<td style="width:4px;border:none;"></td>
+					<td width="40" >
+						<table width="40" cellspacing="0" cellpadding="0" >
+						<tr style="height:20px">
+						<td width="20" cellspacing="0" cellpadding="0" style=" font-size:11px">EPCGNO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td width="20" cellspacing="0" cellpadding="0" style=" "><input type="text" class="normal"></td>
+						
+						</tr>
+						
+						</table>
+						
+					</td>
+					
+				</tr>
+				<tr>
+					<td width="50" >
+						<table width="50" cellspacing="0" cellpadding="0">
+						<tr style="height:20px">
+							<td width="20" height="30" cellspacing="0" cellpadding="0" style="font-size:11px ">INWARDDATE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+							<td height="30" cellspacing="0" cellpadding="0" style=" "><input type="date" class="text1"></td>
+							<td height="30" cellspacing="0" cellpadding="0" style=" "><input type="date" class="text1"></td>
+						</tr>
+						</table>
+						
+					</td>
+					<td style="width:4px;border:none;"></td>
+					<td width="40">
+						<table width="40" cellspacing="0" cellpadding="0">
+						<tr  style="height:20px">
+						<td width="20"  cellspacing="0" cellpadding="0" style="font-size:11px ">PARTY APVAT/CSTNO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td height="30" cellspacing="0" cellpadding="0" style=" "><input type="date" class="text1"></td>
+						<td height="30" cellspacing="0" cellpadding="0" style=" "><input type="date" class="text1"></td>
+						</tr>
+						
+						
+						</table>
+						
+					</td>
+					<td style="width:4px;border:none;"></td>
+					<td width="40"   >
+						<table width="40" cellspacing="0" cellpadding="0">
+						<tr style="height:20px">
+						<td width="20" cellspacing="0" cellpadding="0" style="font-size:11px ">MODEOF TRANSPORT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td width="20" cellspacing="0" cellpadding="0" style=" "><input type="text" class="normal"></td>
+						
+						</tr>
+						
+						</table>
+						
+					</td>
+					<td style="width:4px;border:none;"></td>
+					<td width="40" >
+						<table width="40" cellspacing="0" cellpadding="0" >
+						<tr style="height:20px">
+						<td width="20" cellspacing="0" cellpadding="0" style=" font-size:11px">OTLNO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="text" class="normal"></td>
+						
+						</tr>
+						
+						</table>
+						
+					</td>
+					
+				</tr>
+				<tr>
+					<td width="50" >
+						<table width="50" cellspacing="0" cellpadding="0">
+						<tr style="height:20px">
+							<td width="20" height="30" cellspacing="0" cellpadding="0" style="font-size:11px ">BILLTYPE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+							<td width="20"  cellspacing="0" cellpadding="0" style=" ">
+							<select>        
+							<option value="volvo">CREDITBILL</option>
+							<option value="saab">CREDITBILL</option>
+							<option value="mercedes">CREDITBILL</option>
+							<option value="audi">CREDITBILL</option>
+							</select>
+         				</td>
+						</tr>
+						</table>
+						
+					</td>
+					<td style="width:4px;border:none;"></td>
+					<td width="40">
+						<table width="40" cellspacing="0" cellpadding="0">
+						<tr  style="height:20px">
+						<td width="20"  cellspacing="0" cellpadding="0" style="font-size:11px ">AGENT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td width="20"  cellspacing="0" cellpadding="0" style=" "><input type="text" class="normal"></td>
+							
+						</tr>
+						
+						
+						</table>
+						
+					</td>
+					<td style="width:4px;border:none;"></td>
+					<td width="40"   >
+						<table width="40" cellspacing="0" cellpadding="0">
+						<tr style="height:20px">
+						<td width="20" cellspacing="0" cellpadding="0" style="font-size:11px ">VEHICLE REGISTRATIONNO</td>
+						<td width="20" cellspacing="0" cellpadding="0" style=" "><input type="text" class="normal"></td>
+						
+						</tr>
+						
+						</table>
+						
+					</td>
+					<td style="width:4px;border:none;"></td>
+					<td width="40" >
+						<table width="40" cellspacing="0" cellpadding="0" >
+						<tr style="height:20px">
+						<td width="20" cellspacing="0" cellpadding="0" style=" font-size:11px">C.EX. RANGE NO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="text" class="text1"></td>
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="text"  class="text1"></td>
+						</tr>
+						
+						</table>
+						
+					</td>
+					
+				</tr>
+				<tr>
+					<td width="50" >
+						<table width="50" cellspacing="0" cellpadding="0">
+						<tr style="height:20px">
+							<td width="20" height="30" cellspacing="0" cellpadding="0" style="font-size:11px ">IMPORT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+							<td width="20" height="30" cellspacing="0" cellpadding="0" style=" ">
+							
+							<select>        
+							<option value="volvo">Final</option>
+							<option value="saab">Final</option>
+							<option value="mercedes">Final</option>
+							<option value="audi">Final</option>
+							</select>
+							</td>
+						</tr>
+						</table>
+						
+					</td>
+					<td style="width:4px;border:none;"></td>
+					<td width="40">
+						<table width="40" cellspacing="0" cellpadding="0">
+						<tr  style="height:20px">
+						<td width="20"  cellspacing="0" cellpadding="0" style="font-size:11px ">PURCHASE CONTRACTNO/DATE&nbsp;</td>
+						<td width="20"  cellspacing="0" cellpadding="0" style="font-size:11px "class="text3" ><input type="text" class="text1"></td>
+						<td width="20"  cellspacing="0" cellpadding="0" style=" ">
+							<select class="text1">        
+							<option value="volvo">Final</option>
+							<option value="saab">Final</option>
+							<option value="mercedes">Final</option>
+							<option value="audi">Final</option>
+							</select>
+         				</td>
+						</tr>
+						
+						
+						</table>
+						
+					</td>
+					<td style="width:4px;border:none;"></td>
+					<td width="40"   >
+						<table width="40" cellspacing="0" cellpadding="0">
+						<tr style="height:20px">
+						<td width="20" cellspacing="0" cellpadding="0" style="font-size:11px ">CONTAINERNO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td width="20" cellspacing="0" cellpadding="0" style=" "><input type="text" class="normal"></td>
+						
+						</tr>
+						
+						</table>
+						
+					</td>
+					<td style="width:4px;border:none;"></td>
+					<td width="40" >
+						<table width="40" cellspacing="0" cellpadding="0" >
+						<tr style="height:20px">
+						<td width="20" cellspacing="0" cellpadding="0" style=" font-size:11px">CURRENCY TYPE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><select class="text1">        
+							<option value="volvo">RUPEES</option>
+							<option value="saab">RUPEES</option>
+							<option value="mercedes">RUPEES</option>
+							<option value="audi">RUPEES</option>
+							<option value="audi">RUPEES</option>
+							</select></td>
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="text" class="text1"></td>
+						</tr>
+						
+						</table>
+						
+					</td>
+					
+				</tr>
+				<tr>
+					<td width="50" >
+						<table width="50" cellspacing="0" cellpadding="0">
+						<tr style="height:20px">
+							<td width="20" height="30" cellspacing="0" cellpadding="0" style="font-size:11px ">IMPORTTYPE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+							
+							<td width="20"  cellspacing="0" cellpadding="0" style=" ">
+							<select>        
+							<option value="volvo">Final</option>
+							<option value="saab">Final</option>
+							<option value="mercedes">Final</option>
+							<option value="audi">Final</option>
+							</select>
+         				</td>
+						</tr>
+						</table>
+						
+					</td>
+					<td style="width:4px;border:none;"></td>
+					<td width="40">
+						<table width="40" cellspacing="0" cellpadding="0">
+						<tr  style="height:20px">
+						<td width="20"  cellspacing="0" cellpadding="0" style="font-size:11px ">IMPORTREF&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td width="20" height="30" cellspacing="0" cellpadding="0" style=" "><input type="text" class="normal"></td>
+						</tr>
+						
+						
+						</table>
+						
+					</td>
+					<td style="width:4px;border:none;"></td>
+					<td width="40"   >
+						<table width="40" cellspacing="0" cellpadding="0">
+						<tr style="height:20px">
+						<td width="20" cellspacing="0" cellpadding="0" style="font-size:11px ">VESSEL FLIGHT/NO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td width="20" cellspacing="0" cellpadding="0" style=" "><input type="text" class="normal"></td>
+						
+						</tr>
+						
+						</table>
+						
+					</td>
+					<td style="width:4px;border:none;"></td>
+					<td width="40" >
+						<table width="40" cellspacing="0" cellpadding="0" >
+						<tr style="height:20px">
+						<td width="20" cellspacing="0" cellpadding="0" style=" font-size:11px">CONVERSION </td>
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="text" class="text1"></td>
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="text" class="text1"></td>
+						</tr>
+						
+						</table>
+						
+					</td>
+					
+				</tr>
+				<tr>
+					<td width="50" >
+						<table width="50" cellspacing="0" cellpadding="0">
+						<tr style="height:20px">
+							<td width="20" height="30" cellspacing="0" cellpadding="0" style="font-size:11px ">PURCHASEMODE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+							<td width="20"  cellspacing="0" cellpadding="0" style=" ">
+							<select >        
+							<option value="volvo">REGISTERED</option>
+							<option value="saab">REGISTERED</option>
+							<option value="mercedes">REGISTERED</option>
+							<option value="audi">REGISTERED</option>
+							</select>
+         				</td>
+						</tr>
+						</table>
+						
+					</td>
+					<td style="width:4px;border:none;"></td>
+					<td width="40">
+						<table width="40" cellspacing="0" cellpadding="0">
+						<tr  style="height:20px">
+						<td width="20"  cellspacing="0" cellpadding="0" style="font-size:11px ">DUEDAYS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td width="20" cellspacing="0" cellpadding="0" style=" "><input type="text" class="text1"></td>
+						<td width="20" cellspacing="0" cellpadding="0" style=" "><input type="date" class="text1"></td>
+						
+						</tr>
+						
+						
+						</table>
+						
+					</td>
+					<td style="width:4px;border:none;"></td>
+					<td width="40"   >
+						<table width="40" cellspacing="0" cellpadding="0">
+						<tr style="height:20px">
+						<td width="20" cellspacing="0" cellpadding="0" style="font-size:11px ">LRNO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td width="20" cellspacing="0" cellpadding="0" style=" "><input type="text" class="normal"></td>
+						
+						</tr>
+						
+						</table>
+						
+					</td>
+					<td style="width:4px;border:none;"></td>
+					<td width="40" >
+						<table width="40" cellspacing="0" cellpadding="0" >
+						<tr style="height:20px">
+						<td width="20" cellspacing="0" cellpadding="0" style=" font-size:11px">RATETIME DATE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+						
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="date" class="normal"></td>
+						</tr>
+						
+						</table>
+						
+					</td>
+					
+				</tr>
+				<tr>
+					<td width="50" >
+						<table width="50" cellspacing="0" cellpadding="0">
+						<tr style="height:20px">
+							<td width="20" height="30" cellspacing="0" cellpadding="0" style="font-size:11px ">STATE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+							<td width="20"  cellspacing="0" cellpadding="0" style=" ">
+							<select>        
+							<option value="volvo">WITHINSTATE</option>
+							<option value="saab">WITHINSTATE</option>
+							<option value="mercedes">WITHINSTATE</option>
+							<option value="audi">WITHINSTATE</option>
+							</select>
+         				</td>
+						</tr>
+						</table>
+						
+					</td>
+					<td style="width:4px;border:none;"></td>
+					<td width="40">
+						<table width="40" cellspacing="0" cellpadding="0">
+						<tr  style="height:20px">
+						<td width="20"  cellspacing="0" cellpadding="0" style="font-size:11px ">TERMSOF-DELIVERY AND-PAYMENT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td width="20"  cellspacing="0" cellpadding="0" style=" ">
+							<input type="text" class="normal">
+         				</td>
+						</tr>
+						
+						
+						</table>
+						
+					</td>
+					<td style="width:4px;border:none;"></td>
+					<td width="40"   >
+						<table width="40" cellspacing="0" cellpadding="0">
+						<tr style="height:20px">
+						<td width="20" cellspacing="0" cellpadding="0" style="font-size:11px ">WAYBILL-NO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td width="20" cellspacing="0" cellpadding="0" style=" "><input type="text" class="normal"></td>
+						
+						</tr>
+						
+						</table>
+						
+					</td>
+					<td style="width:4px;border:none;"></td>
+					<td width="40" >
+						<table width="40" cellspacing="0" cellpadding="0" >
+						<tr style="height:20px">
+						
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="text"></td>
+						
+						</tr>
+						
+						</table>
+						
+					</td>
+					
+				</tr>
+				
+			</table>
+		</td>
+		
+	</tr>
+	<!--FIRST ROW COMPLETED-->
+	<tr><td height="5"></td></tr>
+		<tr>
+			<td width="700">
+			<table width"700" cellspacing="0" cellpadding="0" style="border:1px solid black;">
+				<tr>
+					<td width="50" >
+						<table width="50" cellspacing="0" cellpadding="0">
+						<tr style="height:20px">
+							<td width="20" height="30" cellspacing="0" cellpadding="0" style="font-size:11px ">ITEMNAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+							<td width="20" height="30" cellspacing="0" cellpadding="0" style=" "><input type="text" class="normal"></td>
+						</tr>
+						</table>
+						
+					</td>
+					<td style="width:4px;border:none;"></td>
+					<td width="40">
+						<table width="40" cellspacing="0" cellpadding="0">
+						<tr  style="height:20px">
+						<td width="20"  cellspacing="0" cellpadding="0" style="font-size:11px ">DELIVARY-WT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td width="20"  cellspacing="0" cellpadding="0" style=" ">
+							<select>        
+							<option value="volvo"></option>
+							<option value="saab"></option>
+							<option value="mercedes"></option>
+							<option value="audi"></option>
+							</select>
+         				</td>
+						</tr>
+						
+						
+						</table>
+						
+					</td>
+					<td style="width:4px;border:none;"></td>
+					<td width="40"   >
+						<table width="40" cellspacing="0" cellpadding="0">
+						<tr style="height:20px">
+						<td width="20" cellspacing="0" cellpadding="0" style="font-size:11px " >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td width="20" cellspacing="0" cellpadding="0" style=" "><select>        
+							<option value="volvo"></option>
+							<option value="saab"></option>
+							<option value="mercedes"></option>
+							<option value="audi"></option>
+							</select></td>
+						
+						</tr>
+						
+						</table>
+						
+					</td>
+					<td style="width:4px;border:none;"></td>
+					<td width="40" >
+						<table width="40" cellspacing="0" cellpadding="0" >
+						<tr style="height:20px">
+						<td width="20" cellspacing="0" cellpadding="0" style=" font-size:11px">TARE-WEIGHT&nbsp;&nbsp;</td>
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="text"  class="normal1"></td>
+						
+						</tr>
+						
+						</table>
+						
+					</td>
+					
+				</tr>
+				<tr>
+					<td width="50" >
+						<table width="50" cellspacing="0" cellpadding="0">
+						<tr style="height:20px">
+							<td width="20" height="30" cellspacing="0" cellpadding="0" style="font-size:11px ">VERITY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+							<td width="20" height="30" cellspacing="" cellpadding="0" style=" ">
+							<input type="text" class="normal">
+							</td>
+						</tr>
+						</table>
+						
+					</td>
+					<td style="width:4px;border:none;"></td>
+					<td width="40">
+						<table width="40" cellspacing="0" cellpadding="0">
+						<tr  style="height:20px">
+						<td width="20"  cellspacing="0" cellpadding="0" style="font-size:11PX">PRESSMARK-NO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td width="20"  cellspacing="0" cellpadding="0" style="font-size:11PX">
+						<select>        
+							<option value="volvo">Final</option>
+							<option value="saab">Final</option>
+							<option value="mercedes">Final</option>
+							<option value="audi">Final</option>
+							</select>
+         				</td>
+						</tr>
+						
+						
+						</table>
+						
+					</td>
+					<td style="width:4px;border:none;"></td>
+					<td width="40"   >
+						<table width="40" cellspacing="0" cellpadding="0">
+						<tr style="height:20px">
+						<td width="20" cellspacing="0" cellpadding="0" style="font-size:11px ">QUALITY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td  cellspacing="0" cellpadding="0" style=" "><select>        
+							<option value="volvo">Final</option>
+							<option value="saab">Final</option>
+							<option value="mercedes">Final</option>
+							<option value="audi">Final</option>
+							</select>
+						</td>
+						
+						
+						</tr>
+						
+						</table>
+						
+					</td>
+					<td style="width:4px;border:none;"></td>
+					<td width="40">
+						<table width="40" cellspacing="0" cellpadding="0">
+						<tr  style="height:20px">
+						<td width="20"  cellspacing="0" cellpadding="0" style="font-size:11PX">ALLOWANCE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td width="20"  cellspacing="0" cellpadding="0" style="font-size:11PX">
+						<input type="text" class="normal1">
+         				</td>
+						</tr>
+						
+						
+						</table>
+						
+					</td>
+					
+				</tr>
+				<tr>
+					<td width="50" >
+						<table width="50" cellspacing="0" cellpadding="0">
+						<tr style="height:20px">
+							<td width="20" height="30" cellspacing="0" cellpadding="0" style="font-size:11px ">SIZECOUNT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+							<td  height="0" cellspacing="0" cellpadding="0" style=" "><input type="text" class="normal"></td>
+						</tr>
+						</table>
+						
+					</td>
+					<td style="width:4px;border:none;"></td>
+					<td width="40">
+						<table width="40" cellspacing="0" cellpadding="0">
+						<tr  style="height:20px">
+						<td width="20"  cellspacing="0" cellpadding="0" style="font-size:11px ">BAG-SLNO FROM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td  height="0" cellspacing="0" cellpadding="0" style=" "><input type="text" class="text2"></td>
+						<td  height="0" cellspacing="0" cellpadding="0" style=" ">TO</td>
+						<td  height="0" cellspacing="0" cellpadding="0" style=" "><input type="text" class="text2"></td>
+						
+						</tr>
+						
+						
+						</table>
+						
+					</td>
+					<td style="width:4px;border:none;"></td>
+					<td width="40"   >
+						<table width="40" cellspacing="0" cellpadding="0">
+						<tr style="height:20px">
+						<td width="20" cellspacing="0" cellpadding="0" style="font-size:11px ">UNITS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td  cellspacing="0" cellpadding="0" style=" "><select>        
+							<option value="volvo">Final</option>
+							<option value="saab">Final</option>
+							<option value="mercedes">Final</option>
+							<option value="audi">Final</option>
+							</select>
+						</td>
+						</tr>
+						
+						</table>
+						
+					</td>
+					<td style="width:4px;border:none;"></td>
+					<td width="40" >
+						<table width="40" cellspacing="0" cellpadding="0" >
+						<tr style="height:20px">
+						<td width="20" cellspacing="0" cellpadding="0" style=" font-size:11px">NETWT KGS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td width="20" cellspacing="0" cellpadding="0" style=" "><input type="text" class="normal1"></td>
+						
+						</tr>
+						
+						</table>
+						
+					</td>
+					
+				</tr>
+				<tr>
+					<td width="50" >
+						<table width="50" cellspacing="0" cellpadding="0">
+						<tr style="height:20px">
+							<td width="20" height="30" cellspacing="0" cellpadding="0" style="font-size:11px ">TYPE-OF PACK&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+							<td height="30" cellspacing="0" cellpadding="0" style=" "><select>        
+							<option value="volvo">BALES</option>
+							<option value="saab">KGS</option>
+							<option value="mercedes">KGS</option>
+							<option value="audi">KGS</option>
+							</select></td>
+						</tr>
+						</table>
+						
+					</td>
+					<td style="width:4px;border:none;"></td>
+					<td width="40">
+						<table width="40" cellspacing="0" cellpadding="0">
+						<tr  style="height:20px">
+						<td width="20"  cellspacing="0" cellpadding="0" style="font-size:11px ">BAG-TYPE SIZE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td height="30" cellspacing="0" cellpadding="0" style=" "><select class="text1">        
+							<option value="volvo"></option>
+							<option value="saab"></option>
+							<option value="mercedes"></option>
+							<option value="audi"></option>
+							</select></td><td style="width:2px;border:none;"></td>
+						<td height="30" cellspacing="0" cellpadding="0" style=" "><input type="date" class="text1"></td>
+						</tr>
+						
+						
+						</table>
+						
+					</td>
+					<td style="width:4px;border:none;"></td>
+					<td width="40">
+						<table width="40" cellspacing="0" cellpadding="0">
+						<tr  style="height:20px">
+						<td width="20"  cellspacing="0" cellpadding="0" style="font-size:11px ">UNIT TO-BE CONVERTED&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td height="30" cellspacing="0" cellpadding="0" style=" "><select class="text1">        
+							<option value="volvo">KGS</option>
+							<option value="saab">KGS</option>
+							<option value="mercedes">KGS</option>
+							<option value="audi">KGS</option>
+							</select></td><td style="width:0.5px;border:none;"></td>
+						<td height="30" cellspacing="0" cellpadding="0" style=" "><input type="date" class="text2"></td>
+						</tr>
+						
+						
+						</table>
+						
+					</td>
+					<td style="width:4px;border:none;"></td>
+					<td width="40" >
+						<table width="40" cellspacing="0" cellpadding="0" >
+						<tr style="height:20px">
+						<td width="20" cellspacing="0" cellpadding="0" style=" font-size:11px">TOTAL UNIT-VAL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="text" class="normal1"></td>
+						
+						</tr>
+						
+						</table>
+						
+					</td>
+					
+				</tr>
+				<tr>
+					<td width="50" >
+						<table width="50" cellspacing="0" cellpadding="0">
+						<tr style="height:20px">
+							<td width="20" height="30" cellspacing="0" cellpadding="0" style="font-size:11px ">PARTY LOT-NO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+							<td width="20"  cellspacing="0" cellpadding="0" style=" ">
+							<input type="text" class="normal">
+         				</td>
+						</tr>
+						</table>
+						
+					</td>
+					<td style="width:4px;border:none;"></td>
+					<td width="40">
+						<table width="40" cellspacing="0" cellpadding="0">
+						<tr  style="height:20px">
+						<td width="20"  cellspacing="0" cellpadding="0" style="font-size:11px ">CON-FACTOR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td width="20"  cellspacing="0" cellpadding="0" style=" "><input type="text" class="normal"></td>
+							
+						</tr>
+						
+						
+						</table>
+						
+					</td>
+					<td style="width:4px;border:none;"></td>
+					<td width="40"   >
+						<table width="40" cellspacing="0" cellpadding="0">
+						<tr style="height:20px">
+						<td width="20" cellspacing="0" cellpadding="0" style="font-size:11px ">QUANTITY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td width="20" cellspacing="0" cellpadding="0" style=" "><input type="text" class="normal"></td>
+						
+						</tr>
+						
+						</table>
+						
+					</td>
+					<td style="width:4px;border:none;"></td>
+					<td width="40" >
+						<table width="40" cellspacing="0" cellpadding="0" >
+						<tr style="height:20px">
+						<td width="20" cellspacing="0" cellpadding="0" style=" font-size:11px">AMOUNT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="text" class="normal1"></td>
+						
+						</tr>
+						
+						</table>
+						
+					</td>
+					
+				</tr>
+				<tr>
+					<td width="50" >
+						<table width="50" cellspacing="0" cellpadding="0">
+						<tr style="height:20px">
+							<td width="20" height="30" cellspacing="0" cellpadding="0" style="font-size:11px ">MILL-LOT-NO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+							<td width="20" height="30" cellspacing="0" cellpadding="0" style=" ">
+							
+							<input type="text" class="normal">
+							</td>
+						</tr>
+						</table>
+						
+					</td>
+					<td style="width:4px;border:none;"></td>
+					<td width="40">
+						<table width="40" cellspacing="0" cellpadding="0">
+						<tr  style="height:20px">
+						<td width="20"  cellspacing="0" cellpadding="0" style="font-size:11px ">CONV-BALES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td width="20"  cellspacing="0" cellpadding="0" style="font-size:11px "><input type="text" class="normal"></td>
+						
+						</tr>
+						
+						
+						</table>
+						
+					</td>
+					<td style="width:4px;border:none;"></td>
+					<td width="40"   >
+						<table width="40" cellspacing="0" cellpadding="0">
+						<tr style="height:20px">
+						<td width="20" cellspacing="0" cellpadding="0" style="font-size:11px ">GROSS WEIGHT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td width="20" cellspacing="0" cellpadding="0" style=" "><input type="text" class="normal"></td>
+						
+						</tr>
+						
+						</table>
+						
+					</td>
+					<td style="width:4px;border:none;"></td>
+					<td width="40" >
+						<table width="40" cellspacing="0" cellpadding="0" >
+						<tr style="height:20px">
+						<td width="20" cellspacing="0" cellpadding="0" style=" font-size:11px">BASICVALUE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="text" class="normal1"></td>
+						</tr>
+						
+						</table>
+						
+					</td>
+					
+				</tr>
+			
+				
+			</table>
+		</td>
+		
+	</tr>
+	<!--completed second row-->	
+	<tr><td height="5"></td></tr>
+	<tr>
+		<td width="300">
+			<table width"500" cellspacing="0" cellpadding="0" style="border:1px solid black;">
+				<tr>
+					<td width="50" >
+						<table width="50" cellspacing="0" cellpadding="0">
+						<tr style="height:20px">
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="checkbox"></td>
+						<td width="20" cellspacing="0" cellpadding="0" style=" font-size:11px">DISCOUNT </td>
+						
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="text" class="text4"></td>
+						<td style="width:3px"></td>
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="text" class="text3"></td>
+						</tr>
+						
+						<tr><td height="5"></td></tr>
+						
+						<tr style="height:20px">
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="checkbox"></td>
+						<td width="20" cellspacing="0" cellpadding="0" style=" font-size:11px">INSURANCE </td>
+						
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="text" class="text4"></td>
+						<td style="width:3px"></td>
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="text" class="text3"></td>
+						</tr>
+						
+						<tr><td height="5"></td></tr>
+						
+						<tr style="height:20px">
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="checkbox"></td>
+						<td width="20" cellspacing="0" cellpadding="0" style=" font-size:11px">P AND F</td>
+						
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="text" class="text4"></td>
+						<td style="width:3px"></td>
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="text" class="text3"></td>
+						</tr>
+					
+						<tr><td height="5"></td></tr>
+						
+						<tr style="height:20px">
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="checkbox"></td>
+						<td width="20" cellspacing="0" cellpadding="0" style=" font-size:11px">FRIEGHT</td>
+						
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="text" class="text4"></td>
+						<td style="width:3px"></td>
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="text" class="text3"></td>
+						</tr>
+						
+						<tr><td height="5"></td></tr>
+						
+						<tr style="height:20px">
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="checkbox"></td>
+						<td width="20" cellspacing="0" cellpadding="0" style=" font-size:11px">COURIER</td>
+						
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="text" class="text4"></td>
+						<td style="width:3px"></td>
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="text" class="text3"></td>
+						</tr>
+						
+						<tr><td height="5"></td></tr>
+						
+						<tr style="height:20px">
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="checkbox"></td>
+						<td width="20" cellspacing="0" cellpadding="0" style=" font-size:11px">B.E.D</td>
+						
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="text" class="text4"></td>
+						<td style="width:3px"></td>
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="text" class="text3"></td>
+						</tr>
+						
+						<tr><td height="5"></td></tr>
+						
+						<tr style="height:20px">
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="checkbox"></td>
+						<td width="20" cellspacing="0" cellpadding="0" style=" font-size:11px">A.E.D</td>
+						
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="text" class="text4"></td>
+						<td style="width:3px"></td>
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="text" class="text3"></td>
+						</tr>
+						
+						<tr><td height="5"></td></tr>
+						
+						<tr style="height:20px">
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="checkbox"></td>
+						<td width="20" cellspacing="0" cellpadding="0" style=" font-size:11px">CESS</td>
+						
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="text" class="text4"></td>
+						<td style="width:3px"></td>
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="text" class="text3"></td>
+						</tr>
+						
+						<tr><td height="5"></td></tr>
+						
+						<tr style="height:20px">
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="checkbox"></td>
+						<td width="20" cellspacing="0" cellpadding="0" style=" font-size:11px">A.P.VAT</td>
+						
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="text" class="text4"></td>
+						<td style="width:3px"></td>
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="text" class="text3"></td>
+						</tr>
+						
+						<tr><td height="5"></td></tr>
+						
+						<tr style="height:20px">
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="checkbox"></td>
+						<td width="20" cellspacing="0" cellpadding="0" style=" font-size:11px">CST</td>
+						
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="text" class="text4"></td>
+						<td style="width:3px"></td>
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="text" class="text3"></td>
+						</tr>
+						
+						<tr><td height="5"></td></tr>
+						
+						<tr style="height:20px">
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="checkbox"></td>
+						<td width="20" cellspacing="0" cellpadding="0" style=" font-size:11px">EPCG</td>
+						
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="text" class="text4"></td>
+						<td style="width:3px"></td>
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="text" class="text3"></td>
+						</tr>
+						
+						<tr><td height="5"></td></tr>
+						
+						<tr style="height:20px">
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="checkbox"></td>
+						<td width="20" cellspacing="0" cellpadding="0" style=" font-size:11px">OTHERS</td>
+						
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="text" class="text4"></td>
+						<td style="width:3px"></td>
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="text" class="text3"></td>
+						</tr>
+						
+						<tr><td height="5"></td></tr>
+						
+						<tr style="height:20px">
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="checkbox"></td>
+						<td width="20" cellspacing="0" cellpadding="0" style=" font-size:11px">MISLANIOUS</td>
+						
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="text" class="text4"></td>
+						<td style="width:3px"></td>
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="text" class="text3"></td>
+						</tr>
+						
+						<tr><td height="5"></td></tr>
+						
+						<tr style="height:20px">
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="checkbox"></td>
+						<td width="20" cellspacing="0" cellpadding="0" style=" font-size:11px">AMC</td>
+						
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="text" class="text4"></td>
+						<td style="width:3px"></td>
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="text" class="text3"></td>
+						</tr>
+						
+						<tr><td height="5"></td></tr>
+						
+						<tr style="height:20px">
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="checkbox"></td>
+						<td width="20" cellspacing="0" cellpadding="0" style=" font-size:11px">TDS AMOUNT</td>
+						
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="text" class="text4"></td>
+						<td style="width:3px"></td>
+						<td width="5" cellspacing="0" cellpadding="0" style=" "><input type="text" class="text3"></td>
+						</tr>
+						
+						</table>
+	
+					</td>
+					<td width="900" style="border:1px solid black">
+					
+							<table width"700" cellspacing="0" cellpadding="0" style="margin-top:0px;">
+								<!--<tr  style="border:1px solid black;height:40px">
+									<td cellspacing="0" cellpadding="0" style=" " class="width"></td>
+									<td width="5" cellspacing="0" cellpadding="0" style=" "><img src="excel.jpg"></td>
+								</tr>-->
+								
+								<tr  style="border:1px solid black;height:20px;margin-top:0px;" class="width">
+									
+									<th style="font-size:12px">DISCOUNT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+									<th style="font-size:12px">INSURANCE&nbsp;&nbsp;&nbsp;&nbsp;</th> 
+									<th style="font-size:12px">P &amp; F&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+									<th style="font-size:12px">FRIEGHT&nbsp;&nbsp;&nbsp;&nbsp;</th>
+									<th style="font-size:12px">COURIER&nbsp;&nbsp;&nbsp;&nbsp;</th> 
+									<th style="font-size:12px">BED&nbsp;&nbsp;&nbsp;&nbsp;</th>
+									<th style="font-size:12px">AED&nbsp;&nbsp;&nbsp;&nbsp;</th>
+									<th style="font-size:12px">CESS&nbsp;&nbsp;&nbsp;&nbsp;</th> 
+									<th style="font-size:12px">APVAT&nbsp;&nbsp;&nbsp;&nbsp;</th>
+									<th style="font-size:12px">CST&nbsp;&nbsp;&nbsp;&nbsp;</th>
+								</tr>
+								<tr style="height:20px">
+									<td><input type="text" class="text"></td>
+									<td><input type="text"class="text"></td> 
+									<td><input type="text"class="text"></td>
+									<td cellspacing="3"><input type="text"class="text"></td>
+									<td cellspacing="3"><input type="text"class="text"></td> 
+									<td cellspacing="3"><input type="text"class="text"></td>
+									<td><input type="text"class="text"></td>
+									<td><input type="text"class="text"></td> 
+									<td><input type="text"class="text"></td>
+									<td><input type="text"class="text"></td>
+								</tr>
+								<tr><td height="5"></td></tr>
+								<tr style="height:20px">
+								<tr  style="border:1px solid black;height:20px;" class="width">
+									
+									<th style="font-size:12px">DISCOUNT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+									<th style="font-size:12px">INSURANCE&nbsp;&nbsp;&nbsp;&nbsp;</th> 
+									<th style="font-size:12px">P &amp; F&nbsp;&nbsp;&nbsp;&nbsp;</th>
+									<th style="font-size:12px">FRIEGHT&nbsp;&nbsp;&nbsp;&nbsp;</th>
+									<th style="font-size:12px">COURIER&nbsp;&nbsp;&nbsp;&nbsp;</th> 
+									<th style="font-size:12px">BED&nbsp;&nbsp;&nbsp;&nbsp;</th>
+									<th style="font-size:12px">AED&nbsp;&nbsp;&nbsp;&nbsp;</th>
+									<th style="font-size:12px">CESS&nbsp;&nbsp;&nbsp;&nbsp;</th> 
+									<th style="font-size:12px">APVAT&nbsp;&nbsp;&nbsp;&nbsp;</th>
+									<th style="font-size:12px">CST&nbsp;&nbsp;&nbsp;&nbsp;</th>
+								</tr>
+								<tr style="height:20px">
+								
+									<td><input type="text" class="text"></td>
+									<td><input type="text"class="text"></td> 
+									<td><input type="text"class="text"></td>
+									<td><input type="text"class="text"></td>
+									<td><input type="text"class="text"></td> 
+									<td><input type="text"class="text"></td>
+									<td><input type="text"class="text"></td>
+									<td><input type="text"class="text"></td> 
+									<td><input type="text"class="text"></td>
+									<td><input type="text"class="text"></td>
+								</tr>
+								<tr style="height:20px">
+								<tr style="height:20px">
+								<tr>
+								<td align="center" width="50"><input type="button" value="SUBMIT"></td>
+								
+								<td align="right" width="50"><input type="button" value="CLEAR"></td>
+								</tr>
+							</table>
+						</td>
+					
+					
+				</tr>
+			</table>	
+		</td>	
+	</tr>
+	</table>
+	
+
+</body>
+
+
+	
+    <footer>
+      <p>Copyright | <a href="http://www.css3templates.co.uk"> </a></p>
+    </footer>
+  </div>
+  <p>&nbsp;</p>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="js/jquery.sooperfish.js"></script>
+  <script type="text/javascript" src="js/jquery.kwicks-1.5.1.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#images').kwicks({
+        max : 600,
+        spacing : 2
+      });
+      $('ul.sf-menu').sooperfish();
+    });
+  </script>
+</body>
+</html>
+
+<?php
+}
+else
+{
+    header('location:../index.php');
+}
+?>
+
+</html>	
